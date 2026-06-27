@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this formalisation or the accompanying manuscript, please cite as below."
+title: "sbf-lean: machine-checked Lean 4 formalisation of the universal spectral lower bound (Theorem 1)"
+type: software
+version: "0.1-draft"
+date-released: "2026-06-27"
+authors:
+  - family-names: "Fossé"
+    given-names: "Rohan"
+    orcid: "https://orcid.org/0009-0002-2195-0198"
+    affiliation: "CESI Engineering School, Montpellier, France"
+    email: "rfosse@cesi.fr"
+  - family-names: "Pallares"
+    given-names: "Gaël"
+    orcid: "https://orcid.org/0009-0002-8680-604X"
+    affiliation: "CESI LINEACT (EA 7527), Montpellier, France"
+repository-code: "https://github.com/cycling-data-lab/sbf-lean"
+url: "https://github.com/cycling-data-lab/sbf-lean"
+license: MIT
+keywords:
+  - "Lean 4"
+  - "Mathlib"
+  - "formal verification"
+  - "interactive theorem proving"
+  - "graph-supervised learning"
+  - "generalisation lower bound"
+  - "leave-node-out cross-validation"
+  - "orthogonal projection"
+abstract: >-
+  A Lean 4 / Mathlib formalisation of the theoretical core of the manuscript
+  "A universal spectral lower bound on the leave-node-out generalisation error
+  of graph-supervised learning" (Fossé and Pallares). Theorem 1 — the universal
+  spectral lower bound — is machine-checked with zero `sorry`, depending only on
+  the three standard Lean axioms: the transduction identity, the Bessel/projection
+  floor (discharged for the genuine orthogonal projection via
+  Submodule.starProjection), the exact slack-cancellation giving
+  floor ≤ E_T[L_{Tᶜ}(f̂)], the witness saturation (two-sided tightness), and the
+  headline form floor = (1 − R²_spec)·Var(y). The deterministic core of Theorem 2
+  (the ERM oracle inequality, risk within the concentration slack 2B) is also
+  formalised; the finite-sample value of B (transductive Rademacher /
+  Berry–Esseen) is isolated as a hypothesis, beyond current Mathlib.
+preferred-citation:
+  type: article
+  title: "A universal spectral lower bound on the leave-node-out generalisation error of graph-supervised learning"
+  authors:
+    - family-names: "Fossé"
+      given-names: "Rohan"
+      orcid: "https://orcid.org/0009-0002-2195-0198"
+    - family-names: "Pallares"
+      given-names: "Gaël"
+      orcid: "https://orcid.org/0009-0002-8680-604X"
+  journal: "Journal of Machine Learning Research (in preparation)"
+  year: 2026
+  notes: "In preparation; preprint and experiments at https://github.com/cycling-data-lab/structural-bounds-framework"

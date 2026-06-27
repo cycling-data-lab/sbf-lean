@@ -1,0 +1,39 @@
+{
+  "title": "sbf-lean: machine-checked Lean 4 formalisation of the universal spectral lower bound (Theorem 1)",
+  "description": "Lean 4 / Mathlib formal-proof companion to the manuscript 'A universal spectral lower bound on the leave-node-out generalisation error of graph-supervised learning' (R. Fossé and G. Pallares, in preparation). Theorem 1 is machine-checked with zero 'sorry', depending only on the three standard Lean axioms (propext, Classical.choice, Quot.sound): the transduction identity (SE_V = SE_T + SE_{Tᶜ}); the Bessel/projection floor, discharged for the genuine orthogonal projection P_S y via Submodule.starProjection_inner_eq_zero; the exact slack-cancellation universal_lower_bound (floor ≤ E_T[L_{Tᶜ}(f̂)]); the forced ratio ρ = N/|Tᶜ| ≥ 1 making the transduction rearrangement an identity rather than an assumption; the witness saturation (two-sided tightness, lower_bound_tight); and the headline form floor = (1 − R²_spec)·Var(y). The deterministic core of Theorem 2 — the ERM oracle inequality L_V(fhat) ≤ floor + 2B and the population-risk sandwich — is also formalised, with the finite-sample value of the deviation bound B (transductive Rademacher / Berry–Esseen concentration) isolated as a hypothesis, beyond current Mathlib.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "Lean 4",
+    "Mathlib",
+    "formal verification",
+    "interactive theorem proving",
+    "graph-supervised learning",
+    "generalisation lower bound",
+    "leave-node-out cross-validation",
+    "orthogonal projection"
+  ],
+  "creators": [
+    {
+      "name": "Fossé, Rohan",
+      "affiliation": "CESI Engineering School, Montpellier, France",
+      "orcid": "0009-0002-2195-0198"
+    },
+    {
+      "name": "Pallares, Gaël",
+      "affiliation": "CESI LINEACT (EA 7527), Montpellier, France",
+      "orcid": "0009-0002-8680-604X"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/cycling-data-lab/structural-bounds-framework",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "publication-article"
+    }
+  ],
+  "language": "eng",
+  "notes": "Formal-proof companion to the structural-bounds-framework submission. Toolchain: Lean v4.31.0, Mathlib pinned in lake-manifest.json (identical pin to od-lean, so the olean cache is shared). Build: lake exe cache get && lake build. The .lake build directory is not included; oleans regenerate from the pinned Mathlib."
+}
