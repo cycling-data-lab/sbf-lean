@@ -1,5 +1,10 @@
 # sbf-lean — Lean 4 formalisation of Theorem 1
 
+[![CI](https://github.com/cycling-data-lab/sbf-lean/actions/workflows/ci.yml/badge.svg)](https://github.com/cycling-data-lab/sbf-lean/actions/workflows/ci.yml)
+[![Lean 4 + Mathlib](https://img.shields.io/badge/Lean%204-Mathlib-blue.svg)](https://leanprover-community.github.io/)
+[![proof: machine-checked](https://img.shields.io/badge/proof-machine--checked%20(zero%20sorry)-success.svg)](#sorry-free-certificate)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 Machine-checked (Lean 4 + Mathlib) formalisation of **Theorem 1** of
 [**`structural-bounds-framework`**](https://github.com/cycling-data-lab/structural-bounds-framework),
 notes/01 — the *Universal spectral lower bound* (Fossé–Pallares). This is the formal-proof
