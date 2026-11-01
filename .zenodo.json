@@ -26,14 +26,6 @@
       "orcid": "0009-0002-8680-604X"
     }
   ],
-  "related_identifiers": [
-    {
-      "identifier": "https://github.com/cycling-data-lab/structural-bounds-framework",
-      "relation": "isSupplementTo",
-      "scheme": "url",
-      "resource_type": "publication-article"
-    }
-  ],
   "language": "eng",
-  "notes": "Formal-proof companion to the structural-bounds-framework submission. Toolchain: Lean v4.31.0, Mathlib pinned in lake-manifest.json (identical pin to od-lean, so the olean cache is shared). Build: lake exe cache get && lake build. The .lake build directory is not included; oleans regenerate from the pinned Mathlib."
+  "notes": "Formal-proof companion to the structural-bounds-framework manuscript (in preparation). Toolchain: Lean v4.31.0, Mathlib pinned in lake-manifest.json (identical pin to od-lean, so the olean cache is shared). Build: lake exe cache get && lake build. The .lake build directory is not included; oleans regenerate from the pinned Mathlib."
 }

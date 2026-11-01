@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this formalisation or the accompanying manuscript, please cite as below."
+message: "If you use this formalisation, please cite it as below."
 title: "sbf-lean: machine-checked Lean 4 formalisation of the universal spectral lower bound (Theorem 1)"
 type: software
 version: "0.1-draft"
@@ -39,16 +39,15 @@ abstract: >-
   (the ERM oracle inequality, risk within the concentration slack 2B) is also
   formalised; the finite-sample value of B (transductive Rademacher /
   Berry–Esseen) is isolated as a hypothesis, beyond current Mathlib.
-preferred-citation:
-  type: article
-  title: "A universal spectral lower bound on the leave-node-out generalisation error of graph-supervised learning"
-  authors:
-    - family-names: "Fossé"
-      given-names: "Rohan"
-      orcid: "https://orcid.org/0009-0002-2195-0198"
-    - family-names: "Pallares"
-      given-names: "Gaël"
-      orcid: "https://orcid.org/0009-0002-8680-604X"
-  journal: "Journal of Machine Learning Research (in preparation)"
-  year: 2026
-  notes: "In preparation; preprint and experiments at https://github.com/cycling-data-lab/structural-bounds-framework"
+references:
+  - type: unpublished
+    title: "A universal spectral lower bound on the leave-node-out generalisation error of graph-supervised learning"
+    authors:
+      - family-names: "Fossé"
+        given-names: "Rohan"
+        orcid: "https://orcid.org/0009-0002-2195-0198"
+      - family-names: "Pallares"
+        given-names: "Gaël"
+        orcid: "https://orcid.org/0009-0002-8680-604X"
+    year: 2026
+    notes: "Manuscript in preparation."
