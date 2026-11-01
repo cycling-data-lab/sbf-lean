@@ -5,10 +5,10 @@
 [![proof: machine-checked](https://img.shields.io/badge/proof-machine--checked%20(zero%20sorry)-success.svg)](#sorry-free-certificate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Machine-checked (Lean 4 + Mathlib) formalisation of **Theorem 1** of
-[**`structural-bounds-framework`**](https://github.com/cycling-data-lab/structural-bounds-framework),
-notes/01 — the *Universal spectral lower bound* (Fossé–Pallares). This is the formal-proof
-companion to that manuscript, living alongside it in `cycling-data-lab`.
+Machine-checked (Lean 4 + Mathlib) formalisation of **Theorem 1** of the
+**`structural-bounds-framework`** manuscript (Fossé–Pallares, in preparation, not yet public),
+notes/01: the *Universal spectral lower bound*. This is the formal-proof companion to that
+manuscript.
 
 ## Result
 
@@ -89,10 +89,10 @@ Theorem 3 (Berry–Esseen minimax). See the framework's notes/02.
 
 ## Siblings
 
-- [`structural-bounds-framework`](https://github.com/cycling-data-lab/structural-bounds-framework)
+- `structural-bounds-framework` (in preparation, not yet public)
   — **the manuscript this verifies** (paper + experiments); this repo is its formal-proof
   companion.
 - [`od-lean`](https://github.com/cycling-data-lab/od-lean) — the same finite-algebra-core
   formalisation style applied to the GBFS OD identifiability bounds
-  ([`gbfs-od-reconstruction`](https://github.com/cycling-data-lab/gbfs-od-reconstruction));
+  (manuscript `gbfs-od-reconstruction`, in preparation);
   shares the Mathlib olean cache (identical pin).
